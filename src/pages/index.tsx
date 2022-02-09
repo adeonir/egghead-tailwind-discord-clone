@@ -1,13 +1,20 @@
+import Image from 'next/image'
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gray-700 text-white">
       <div className="max-w-lg">
         <div className="flex px-4 py-1 hover:bg-gray-800 hover:bg-opacity-30">
-          <img
-            className="mr-4 h-10 w-10 rounded-full"
-            src="/adamwathan.jpeg"
-            alt=""
-          />
+          <div className="mr-4 h-10 w-10">
+            <Image
+              className="rounded-full"
+              src="/adamwathan.jpeg"
+              alt=""
+              width="40"
+              height="40"
+              layout="fixed"
+            />
+          </div>
           <div>
             <p className="flex items-baseline">
               <span className="mr-2 text-sm font-medium text-green-500">
