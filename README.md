@@ -20,3 +20,4 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 2: [Scaffolding a Multi-Panel App Layout with Flexbox](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.2)
 - Lesson 3: [Making Panels Scrollable with Flexbox](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.3)
 - Lesson 3: [Customizing Tailwind’s Color Palette With Your Brand](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.4)
+- Lesson 3: [Adding Custom Fonts to Tailwind](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.5)

@@ -1,7 +1,13 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Whitney', ...defaultTheme.fontFamily.sans],
+        title: ['Ginto', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         gray: {
           50: '#ecedee',
