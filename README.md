@@ -17,3 +17,4 @@ If you're a web developer interested in front-end design and development, you ow
 ---
 
 - Lesson 1: [Intro to Styling Custom UIs with Tailwind Utility Classes](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.1)
+- Lesson 1: [Scaffolding a Multi-Panel App Layout with Flexbox](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.2)
