@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Craft Scalable, Custom-Made Interfaces with Tailwind CSS
 
-## Getting Started
+This is the source code for my Egghead course on Tailwind CSS, which you can find here:
 
-First, run the development server:
+https://egghead.io/courses/craft-scalable-custom-made-interfaces-with-tailwind-css-8dfee898
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In this course, you’ll learn the fundamentals of styling a modern web application using Tailwind CSS's utility classes, as well as some tips and tricks for integrating it with component-based frameworks like React and Vue.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Functional CSS has been growing in popularity, and for good reason: it allows developers to build truly custom user interfaces without using any messy tweaks or overrides that have plagued existing tools like Bootstrap for years.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+When it comes to Functional CSS libraries, Tailwind is the reigning champ. By several measures, it’s one of the hottest pieces of tech right now in all of frontend web development. Its APIs make developers feel incredibly productive, and because it's just a set of well-thought-out CSS classes, you can use it entirely from within your HTML templates or render functions without having to learn any new tooling, or even opening up a separate file.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you're a web developer interested in front-end design and development, you owe it to yourself to give Tailwind a try, if only to not miss out on one of the biggest new trends in our industry.
