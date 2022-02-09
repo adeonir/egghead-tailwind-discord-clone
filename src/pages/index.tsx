@@ -1,15 +1,20 @@
+import { DiscordIcon } from 'components/DiscordIcon'
+
 export default function Home() {
   return (
     <div className="flex h-screen text-gray-100">
       <div className="p-r-6 space-y-3 overflow-y-auto bg-gray-900 p-3 scrollbar scrollbar-none">
-        {[...Array(20)].map((_, index) => (
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-700 font-medium text-gray-100 transition duration-300 hover:bg-brand hover:text-white">
+          <DiscordIcon className="h-5 w-7" />
+        </div>
+        {/* {[...Array(20)].map((_, index) => (
           <div
             key={index}
             className="flex h-12 w-12 items-center justify-center rounded-full bg-white font-medium text-gray-800"
           >
             {index + 1}
           </div>
-        ))}
+        ))} */}
       </div>
       <div className="flex w-60 flex-col bg-gray-800">
         <div className="flex h-12 items-center border-b border-gray-800 px-3 font-title text-white shadow-md">

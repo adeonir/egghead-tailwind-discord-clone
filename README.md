@@ -19,5 +19,6 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 1: [Intro to Styling Custom UIs with Tailwind Utility Classes](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.1)
 - Lesson 2: [Scaffolding a Multi-Panel App Layout with Flexbox](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.2)
 - Lesson 3: [Making Panels Scrollable with Flexbox](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.3)
-- Lesson 3: [Customizing Tailwind’s Color Palette With Your Brand](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.4)
-- Lesson 3: [Adding Custom Fonts to Tailwind](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.5)
+- Lesson 4: [Customizing Tailwind’s Color Palette With Your Brand](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.4)
+- Lesson 5: [Adding Custom Fonts to Tailwind](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.5)
+- Lesson 6: [Building a Hoverable Server Selector With SVG](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.6)

@@ -9,6 +9,7 @@ module.exports = {
         title: ['Ginto', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        brand: '#5865f2',
         gray: {
           50: '#ecedee',
           100: '#dcddde',
