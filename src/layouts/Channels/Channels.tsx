@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 
 import * as Icons from 'components/Icons'
 import { ChannelLink } from 'components/ChannelLink'
+import { Messages, MessagesWithUser } from 'components/Messages'
 
 export type Data = {
   data: {
@@ -149,13 +150,14 @@ export const Channels = ({ data }: Data) => {
         </div>
 
         <div className="flex-1 space-y-4 overflow-y-auto p-3 scrollbar scrollbar-thin scrollbar-thumb-black scrollbar-track-gray-800">
-          {[...Array(40)].map((_, index) => (
-            <div key={index}>
-              Message {index + 1} Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Maxime reiciendis soluta ratione sint
-              necessitatibus harum perferendis quam pariatur accusamus ab
-              cumque, hic atque ullam corporis suscipit, nesciunt provident
-              numquam impedit.
+          {channel?.messages.map((message, i) => (
+            <div key={message.id}>
+              {i === 0 ||
+              message.username !== channel.messages[i - 1].username ? (
+                <MessagesWithUser message={message} />
+              ) : (
+                <Messages message={message} />
+              )}
             </div>
           ))}
         </div>
