@@ -7,7 +7,7 @@ export default function ChannelsPage({ data }: Data) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data } = require('data/data.js') as Data
+  const { data } = require('data/data') as Data
 
   return {
     props: {

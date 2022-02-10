@@ -5,13 +5,15 @@ import * as Icons from 'components/Icons'
 import { ChannelLink } from 'components/ChannelLink'
 import { Messages, MessagesWithUser } from 'components/Messages'
 
+export type Props = {
+  data: Data[]
+}
+
 export type Data = {
-  data: {
-    [key: string]: {
-      label: string
-      categories: Category[]
-    }
-  }
+  id: string
+  label: string
+  img: string
+  categories: Category[]
 }
 
 export type Category = {
@@ -37,10 +39,12 @@ export type Message = {
   text: string
 }
 
-export const Channels = ({ data }: Data) => {
+export const Channels = ({ data }: Props) => {
   const router = useRouter()
-  const server = data[`${router.query.sid}`]
-  const channel = server.categories
+  const server = data.find(
+    (server) => Number(server.id) === Number(router.query.sid)
+  )
+  const channel = server?.categories
     .map((c) => c.channels)
     .flat()
     .find((c) => Number(c.id) === Number(router.query.cid))
@@ -63,12 +67,12 @@ export const Channels = ({ data }: Data) => {
             <Icons.Verified className="absolute h-4 w-4 text-gray-550" />
             <Icons.Check className="absolute h-4 w-4 whitespace-nowrap text-white" />
           </div>
-          {server.label}
+          {server?.label}
           <Icons.Chevron className="ml-auto h-[18px] w-[18px] opacity-80" />
         </button>
 
         <div className="flex-1 space-y-[21px] overflow-y-auto pt-3 font-medium text-gray-300 scrollbar scrollbar-thin scrollbar-thumb-gray-900">
-          {server.categories.map((category: Category) => (
+          {server?.categories.map((category: Category) => (
             <div key={category.id}>
               {category.label && (
                 <button

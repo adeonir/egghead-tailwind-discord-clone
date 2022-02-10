@@ -5,15 +5,11 @@ import { Discord } from 'components/Icons'
 import { NavLink } from 'components/NavLink'
 import { useRouter } from 'next/router'
 
+import { data } from 'data/data'
+
 type Props = {
   children: ReactNode
 }
-
-const servers = [
-  { id: 1, slug: 'tailwind', img: 'tailwind.png' },
-  { id: 2, slug: 'next', img: 'next.png' },
-  { id: 3, slug: 'mirage', img: 'mirage.png' },
-]
 
 export const Base = ({ children }: Props) => {
   const router = useRouter()
@@ -28,15 +24,15 @@ export const Base = ({ children }: Props) => {
 
         <hr className="mx-2 rounded border-t-2 border-t-white/[.06]" />
 
-        {servers.map((server) => (
+        {data.map((server) => (
           <NavLink
             key={server.id}
-            href={`/servers/${server.id}/channels/1`}
+            href={`/servers/${server.id}/channels/${server.categories[0].channels[0].id}`}
             active={Number(sid) === Number(server.id)}
           >
             <Image
               src={`/servers/${server.img}`}
-              alt={`${server.slug}`}
+              alt={`${server.label}`}
               width={48}
               height={48}
             />
