@@ -1,4 +1,4 @@
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <div className="flex w-60 flex-col bg-gray-800">
