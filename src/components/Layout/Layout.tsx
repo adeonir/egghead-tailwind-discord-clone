@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
-import { DiscordIcon } from 'components/Icons'
+import { Discord } from 'components/Icons'
 import { NavLink } from 'components/NavLink'
 
 type Props = {
@@ -19,7 +19,7 @@ export const Layout = ({ children }: Props) => {
     <div className="flex h-screen text-gray-100">
       <div className="space-y-3 overflow-y-auto bg-gray-900 p-3 scrollbar scrollbar-none">
         <NavLink href="/">
-          <DiscordIcon className="h-5 w-7" />
+          <Discord className="h-5 w-7" />
         </NavLink>
 
         <hr className="mx-2 rounded border-t-2 border-t-white/[.06]" />

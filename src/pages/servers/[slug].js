@@ -1,14 +1,10 @@
 import { useRouter } from 'next/router'
 import startCase from 'lodash.startcase'
 
-import {
-  AddPersonIcon,
-  BookIcon,
-  CheckIcon,
-  ChevronIcon,
-  SpeakerphoneIcon,
-  VerifiedIcon,
-} from 'components/Icons'
+import * as Icons from 'components/Icons'
+import { ChannelLink } from 'components/ChannelLink'
+
+import data from '../../../data.json'
 
 export default function Server() {
   const router = useRouter()
@@ -18,31 +14,29 @@ export default function Server() {
       <div className="flex w-60 flex-col bg-gray-800">
         <button className="transition-200 flex h-12 items-center px-4 font-title text-[15px] text-white shadow-sm hover:bg-gray-550/[.16]">
           <div className="relative mr-1 h-4 w-4">
-            <VerifiedIcon className="absolute h-4 w-4 text-gray-550" />
-            <CheckIcon className="absolute h-4 w-4 text-white" />
+            <Icons.Verified className="absolute h-4 w-4 text-gray-550" />
+            <Icons.Check className="absolute h-4 w-4 text-white" />
           </div>
           {startCase(router.query.slug)}
-          <ChevronIcon className="ml-auto h-[18px] w-[18px] opacity-80" />
+          <Icons.Chevron className="ml-auto h-[18px] w-[18px] opacity-80" />
         </button>
-        <div className="mt-[17px] flex-1 overflow-y-auto font-medium text-gray-300 scrollbar scrollbar-thin scrollbar-thumb-gray-900">
-          <div className="space-y-0.5">
-            <a
-              href="#"
-              className="group mx-2 flex items-center rounded px-2 py-1 text-gray-300 transition hover:bg-gray-550/[.16] hover:text-gray-100"
-            >
-              <BookIcon className="mr-1.5 h-5 w-5 pt-px text-gray-400" />
-              welcome
-              <AddPersonIcon className="ml-auto h-4 w-4 text-gray-200 opacity-0 transition group-hover:opacity-100 hover:text-gray-100" />
-            </a>
-            <a
-              href="#"
-              className="group mx-2 flex items-center rounded px-2 py-1 text-gray-300 transition hover:bg-gray-550/[.16] hover:text-gray-100"
-            >
-              <SpeakerphoneIcon className="mr-1.5 h-5 w-5 pt-px text-gray-400" />
-              anouncements
-              <AddPersonIcon className="ml-auto h-4 w-4 text-gray-200 opacity-0 transition group-hover:opacity-100 hover:text-gray-100" />
-            </a>
-          </div>
+        <div className="flex-1 space-y-[21px] overflow-y-auto pt-3 font-medium text-gray-300 scrollbar scrollbar-thin scrollbar-thumb-gray-900">
+          {data[router.query.slug].categories.map((category) => (
+            <div key={category.id}>
+              {category.label && (
+                <button className="flex items-center px-0.5 font-title text-xs uppercase tracking-wide">
+                  <Icons.Arrow className="mr-0.5 h-3 w-3" />
+                  {category.label}
+                </button>
+              )}
+
+              <div className="mt-[5px] space-y-0.5">
+                {category.channels.map((channel) => (
+                  <ChannelLink channel={channel} key={channel.id} />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="flex flex-1 flex-col bg-gray-700">

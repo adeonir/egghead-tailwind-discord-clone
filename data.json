@@ -1,0 +1,121 @@
+{
+  "tailwind": {
+    "label": "Tailwind CSS",
+    "categories": [
+      {
+        "id": 1,
+        "label": "",
+        "channels": [
+          { "id": 1, "label": "welcome", "icon": "Book" },
+          { "id": 2, "label": "announcements", "icon": "SpeakerPhone" }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Tailwind CSS",
+        "channels": [
+          { "id": 3, "label": "general" },
+          { "id": 4, "label": "plugins" },
+          { "id": 5, "label": "help" },
+          { "id": 6, "label": "internals" }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Tailwind Labs",
+        "channels": [
+          { "id": 7, "label": "tailwind-ui" },
+          { "id": 8, "label": "headless-ui" },
+          { "id": 9, "label": "refactoring-ui" },
+          { "id": 10, "label": "heroicons" }
+        ]
+      },
+      {
+        "id": 4,
+        "label": "Off topic",
+        "channels": [
+          { "id": 11, "label": "design" },
+          { "id": 12, "label": "development" },
+          { "id": 13, "label": "random" }
+        ]
+      },
+      {
+        "id": 5,
+        "label": "Community",
+        "channels": [
+          { "id": 14, "label": "jobs" },
+          { "id": 15, "label": "showcase" },
+          { "id": 16, "label": "bots" }
+        ]
+      }
+    ]
+  },
+  "next": {
+    "label": "Next.js",
+    "categories": [
+      {
+        "id": 1,
+        "label": "",
+        "channels": [
+          { "id": 1, "label": "welcome", "icon": "Book" },
+          { "id": 2, "label": "announcements", "icon": "SpeakerPhone" },
+          { "id": 2, "label": "releases", "icon": "SpeakerPhone" }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Community",
+        "channels": [
+          { "id": 3, "label": "introductions" },
+          { "id": 4, "label": "general" },
+          { "id": 5, "label": "community-help" },
+          { "id": 6, "label": "off-topic" }
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Share",
+        "channels": [
+          { "id": 7, "label": "showcase" },
+          { "id": 8, "label": "jobs" },
+          { "id": 9, "label": "resources" },
+          { "id": 10, "label": "kudos" },
+          { "id": 11, "label": "discord-suggestions" },
+          { "id": 12, "label": "vercel" }
+        ]
+      },
+      {
+        "id": 4,
+        "label": "Tools",
+        "channels": [
+          { "id": 13, "label": "javascript" },
+          { "id": 14, "label": "typescript" },
+          { "id": 15, "label": "tailwind" },
+          { "id": 16, "label": "mdx" }
+        ]
+      }
+    ]
+  },
+  "mirage": {
+    "label": "Next.js",
+    "categories": [
+      {
+        "id": 1,
+        "label": "",
+        "channels": [
+          { "id": 1, "label": "welcome", "icon": "Book" },
+          { "id": 2, "label": "announcements", "icon": "SpeakerPhone" }
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Text Channels",
+        "channels": [
+          { "id": 3, "label": "general" },
+          { "id": 4, "label": "graphql" },
+          { "id": 5, "label": "typescript" }
+        ]
+      }
+    ]
+  }
+}

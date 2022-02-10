@@ -2,7 +2,7 @@ import { SVGProps } from 'react'
 
 type Props = SVGProps<SVGSVGElement>
 
-export const DiscordIcon = ({ ...props }: Props) => {
+export const Discord = ({ ...props }: Props) => {
   return (
     <svg aria-hidden="false" viewBox="0 0 28 20" {...props}>
       <path
@@ -13,7 +13,7 @@ export const DiscordIcon = ({ ...props }: Props) => {
   )
 }
 
-export const VerifiedIcon = ({ ...props }: Props) => {
+export const Verified = ({ ...props }: Props) => {
   return (
     <svg
       aria-label="Verified"
@@ -30,7 +30,7 @@ export const VerifiedIcon = ({ ...props }: Props) => {
   )
 }
 
-export const CheckIcon = ({ ...props }: Props) => {
+export const Check = ({ ...props }: Props) => {
   return (
     <svg aria-hidden="false" viewBox="0 0 16 15.2" {...props}>
       <path
@@ -41,7 +41,7 @@ export const CheckIcon = ({ ...props }: Props) => {
   )
 }
 
-export const ChevronIcon = ({ ...props }: Props) => {
+export const Chevron = ({ ...props }: Props) => {
   return (
     <svg viewBox="0 0 18 18" fill="none" {...props}>
       <path
@@ -52,7 +52,7 @@ export const ChevronIcon = ({ ...props }: Props) => {
   )
 }
 
-export const BookIcon = ({ ...props }: Props) => {
+export const Book = ({ ...props }: Props) => {
   return (
     <svg viewBox="0 0 40 40" {...props}>
       <path
@@ -65,7 +65,7 @@ export const BookIcon = ({ ...props }: Props) => {
   )
 }
 
-export const SpeakerphoneIcon = ({ ...props }: Props) => {
+export const SpeakerPhone = ({ ...props }: Props) => {
   return (
     <svg viewBox="0 0 24 24" {...props}>
       <path
@@ -76,7 +76,7 @@ export const SpeakerphoneIcon = ({ ...props }: Props) => {
   )
 }
 
-export const ArrowComponent = ({ ...props }: Props) => {
+export const Arrow = ({ ...props }: Props) => {
   return (
     <svg viewBox="0 0 24 24" {...props}>
       <path
@@ -89,7 +89,7 @@ export const ArrowComponent = ({ ...props }: Props) => {
   )
 }
 
-export const AddPersonIcon = ({ ...props }: Props) => {
+export const AddPerson = ({ ...props }: Props) => {
   return (
     <svg viewBox="0 0 16 16" {...props}>
       <path
@@ -100,7 +100,7 @@ export const AddPersonIcon = ({ ...props }: Props) => {
   )
 }
 
-export const HashtagIcon = ({ ...props }: Props) => {
+export const Hashtag = ({ ...props }: Props) => {
   return (
     <svg viewBox="0 0 24 24" {...props}>
       <path
