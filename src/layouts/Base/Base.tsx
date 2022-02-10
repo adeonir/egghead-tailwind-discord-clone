@@ -3,18 +3,22 @@ import { ReactNode } from 'react'
 
 import { Discord } from 'components/Icons'
 import { NavLink } from 'components/NavLink'
+import { useRouter } from 'next/router'
 
 type Props = {
   children: ReactNode
 }
 
 const servers = [
-  { slug: 'tailwind', img: 'tailwind.png' },
-  { slug: 'next', img: 'next.png' },
-  { slug: 'mirage', img: 'mirage.png' },
+  { id: 1, slug: 'tailwind', img: 'tailwind.png' },
+  { id: 2, slug: 'next', img: 'next.png' },
+  { id: 3, slug: 'mirage', img: 'mirage.png' },
 ]
 
-export const Layout = ({ children }: Props) => {
+export const Base = ({ children }: Props) => {
+  const router = useRouter()
+  const { sid } = router.query
+
   return (
     <div className="flex h-screen text-gray-100">
       <div className="space-y-3 overflow-y-auto bg-gray-900 p-3 scrollbar scrollbar-none">
@@ -25,10 +29,14 @@ export const Layout = ({ children }: Props) => {
         <hr className="mx-2 rounded border-t-2 border-t-white/[.06]" />
 
         {servers.map((server) => (
-          <NavLink href={`/servers/${server.slug}`} key={server.slug}>
+          <NavLink
+            key={server.id}
+            href={`/servers/${server.id}/channels/1`}
+            active={Number(sid) === Number(server.id)}
+          >
             <Image
-              src={`/servers/${server.slug}.png`}
-              alt={`${server.img}`}
+              src={`/servers/${server.img}`}
+              alt={`${server.slug}`}
               width={48}
               height={48}
             />
