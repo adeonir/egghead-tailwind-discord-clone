@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Channel } from 'layouts/Channels'
+import type { Channel } from 'layouts/Channels'
 
 import * as Icons from 'components/Icons'
 

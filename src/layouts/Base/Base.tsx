@@ -1,9 +1,9 @@
-import Image from 'next/image'
 import { ReactNode } from 'react'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 import { Discord } from 'components/Icons'
 import { NavLink } from 'components/NavLink'
-import { useRouter } from 'next/router'
 
 import { data } from 'data/data'
 

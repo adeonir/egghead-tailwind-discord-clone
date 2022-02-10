@@ -1,6 +1,8 @@
 import { GetServerSideProps } from 'next'
 
-import { Channels, Data } from 'layouts/Channels'
+import { Channels } from 'layouts/Channels'
+
+import type { Props as Data } from 'layouts/Channels'
 
 export default function ChannelsPage({ data }: Data) {
   return <Channels data={data} />

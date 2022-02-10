@@ -1,4 +1,4 @@
-import { Message } from 'layouts/Channels'
+import type { Message } from 'layouts/Channels'
 
 type Props = {
   message: Message
