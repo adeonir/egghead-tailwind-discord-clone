@@ -22,10 +22,18 @@ export type Category = {
 export type Channel = {
   id: number
   label: string
-  messages: string[]
+  messages: Message[]
   description?: string
   icon?: string
   unread?: string
+}
+
+export type Message = {
+  id: string
+  username: string
+  avatar: string
+  date: string
+  text: string
 }
 
 export const Channels = ({ data }: Data) => {
