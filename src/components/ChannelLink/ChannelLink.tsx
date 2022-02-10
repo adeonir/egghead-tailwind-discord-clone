@@ -2,23 +2,16 @@ import * as Icons from 'components/Icons'
 
 type Props = {
   channel: {
-    id: string
+    id: number
     label: string
-    icon?:
-      | 'Discord'
-      | 'Verified'
-      | 'Check'
-      | 'Chevron'
-      | 'Book'
-      | 'SpeakerPhone'
-      | 'Arrow'
-      | 'AddPerson'
-      | 'Hashtag'
+    icon?: string
   }
 }
 
 export const ChannelLink = ({ channel }: Props) => {
-  const Icon = channel.icon ? Icons[channel.icon] : Icons.Hashtag
+  const Icon = channel.icon
+    ? Icons[channel.icon as keyof typeof Icons]
+    : Icons.Hashtag
 
   return (
     <a
