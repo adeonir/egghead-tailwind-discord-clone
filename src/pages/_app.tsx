@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 
+import { Layout } from 'components/Layout'
+
 import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -10,7 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Discord Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }
