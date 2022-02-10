@@ -1,5 +1,5 @@
 {
-  "tailwind": {
+  "1": {
     "label": "Tailwind CSS",
     "categories": [
       {
@@ -50,7 +50,7 @@
       }
     ]
   },
-  "next": {
+  "2": {
     "label": "Next.js",
     "categories": [
       {
@@ -96,7 +96,7 @@
       }
     ]
   },
-  "mirage": {
+  "3": {
     "label": "Next.js",
     "categories": [
       {
