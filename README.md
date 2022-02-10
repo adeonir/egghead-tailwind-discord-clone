@@ -36,3 +36,4 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 18: [Styling the Search Box Using the Forms Plugin](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.8)
 - Lesson 19: [Using Components to Dynamically Generate the Channel's Messages](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.9)
 - Lesson 20: [Dynamically Generating the Server and Channel Navs](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-2.0)
+- Lesson 21: [Using Responsive Design to Hide the Desktop Navigation](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-2.1)
