@@ -31,3 +31,4 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 13: [Identifying Repeated Patterns while Dynamically Generating the Channel List](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.3)
 - Lesson 14: [Styling the Active Channel Link with a New Dynamic URL Segment](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.4)
 - Lesson 15: [Using a State Variable to Add Unread States to the Channel Nav](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.5)
+- Lesson 16: [Building Collapsible Categories with Rotating Arrow Icons](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.6)
