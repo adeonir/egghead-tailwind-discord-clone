@@ -23,3 +23,4 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 5: [Adding Custom Fonts to Tailwind](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.5)
 - Lesson 6: [Building a Hoverable Server Selector With SVG](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.6)
 - Lesson 7: [Transitioning Rounded Corners using the JIT Compiler](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.7)
+- Lesson 8: [Conditionally Applying Classes Based on the Active URL](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.8)
