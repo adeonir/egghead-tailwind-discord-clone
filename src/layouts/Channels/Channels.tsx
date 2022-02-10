@@ -22,6 +22,8 @@ export type Category = {
 export type Channel = {
   id: number
   label: string
+  messages: string[]
+  description?: string
   icon?: string
   unread?: string
 }

@@ -7,7 +7,7 @@ export default function ServerPage({ data }: Data) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const data = require('data/data.json') as Data
+  const { data } = require('data/data.js') as Data
 
   return {
     props: {
