@@ -1,5 +1,6 @@
-import { Channels, Data } from 'layouts/Channels'
 import { GetServerSideProps } from 'next'
+
+import { Channels, Data } from 'layouts/Channels'
 
 export default function ChannelsPage({ data }: Data) {
   return <Channels data={data} />
