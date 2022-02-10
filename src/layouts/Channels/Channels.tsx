@@ -52,7 +52,7 @@ export const Channels = ({ data }: Data) => {
         <button className="transition-200 flex h-12 items-center px-4 font-title text-[15px] text-white shadow-sm hover:bg-gray-550/[.16]">
           <div className="relative mr-1 h-4 w-4">
             <Icons.Verified className="absolute h-4 w-4 text-gray-550" />
-            <Icons.Check className="absolute h-4 w-4 text-white" />
+            <Icons.Check className="absolute h-4 w-4 whitespace-nowrap text-white" />
           </div>
           {server.label}
           <Icons.Chevron className="ml-auto h-[18px] w-[18px] opacity-80" />
@@ -119,6 +119,18 @@ export const Channels = ({ data }: Data) => {
             <button className="text-gray-200 hover:text-gray-100">
               <Icons.People className="mx-2 h-6 w-6" />
             </button>
+
+            <div className="relative mx-2">
+              <input
+                type="text"
+                placeholder="Search"
+                className="h-6 w-36 rounded border-none bg-gray-900 px-1.5 text-sm font-medium placeholder-gray-400"
+              />
+              <div className="absolute inset-y-0 right-0 flex items-center">
+                <Icons.Spyglass className="mr-1.5 h-4 w-4 text-gray-400" />
+              </div>
+            </div>
+
             <button className="text-gray-200 hover:text-gray-100">
               <Icons.Inbox className="mx-2 h-6 w-6" />
             </button>
