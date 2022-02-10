@@ -13,16 +13,34 @@ export const Layout = ({ children }: Props) => {
 
   return (
     <div className="flex h-screen text-gray-100">
-      <div className="p-r-6 space-y-3 overflow-y-auto bg-gray-900 p-3 scrollbar scrollbar-none">
+      <div className="space-y-3 overflow-y-auto bg-gray-900 p-3 scrollbar scrollbar-none">
         <Link href="/">
-          <a
-            className={`${
-              router.pathname === '/'
-                ? 'cursor-default rounded-2xl bg-brand text-white'
-                : 'rounded-3xl bg-gray-700 font-medium text-gray-100 hover:rounded-2xl hover:bg-brand hover:text-white '
-            } flex h-12 w-12 items-center justify-center transition-all duration-300`}
-          >
-            <DiscordIcon className="h-5 w-7" />
+          <a className="group relative block">
+            <div className="absolute -left-3 flex h-full items-center">
+              <div
+                className={`${
+                  router.pathname === '/'
+                    ? 'h-10'
+                    : 'h-5 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100'
+                } w-1 origin-left rounded-r bg-white transition-all duration-300`}
+              />
+            </div>
+
+            <div
+              className={`${
+                router.pathname !== '/' && 'group-active:translate-y-px'
+              }`}
+            >
+              <div
+                className={`${
+                  router.pathname === '/'
+                    ? 'cursor-default rounded-2xl bg-brand text-white'
+                    : 'rounded-3xl bg-gray-700 font-medium text-gray-100 group-hover:rounded-2xl group-hover:bg-brand group-hover:text-white '
+                } flex h-12 w-12 items-center justify-center transition-all duration-300`}
+              >
+                <DiscordIcon className="h-5 w-7" />
+              </div>
+            </div>
           </a>
         </Link>
         <Link href="/servers/1">
