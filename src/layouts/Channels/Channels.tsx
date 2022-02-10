@@ -22,6 +22,7 @@ export type Channel = {
   id: number
   label: string
   icon?: string
+  unread?: string
 }
 
 export const Channels = ({ data }: Data) => {
@@ -44,7 +45,7 @@ export const Channels = ({ data }: Data) => {
             (category: Category) => (
               <div key={category.id}>
                 {category.label && (
-                  <button className="flex items-center px-0.5 font-title text-xs uppercase tracking-wide">
+                  <button className="flex w-full items-center px-0.5 font-title text-xs uppercase tracking-wide hover:text-gray-100">
                     <Icons.Arrow className="mr-0.5 h-3 w-3" />
                     {category.label}
                   </button>
