@@ -33,3 +33,4 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 15: [Using a State Variable to Add Unread States to the Channel Nav](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.5)
 - Lesson 16: [Building Collapsible Categories with Rotating Arrow Icons](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.6)
 - Lesson 17: [Building the Channel Header with Flexbox Shrink and Truncating Text](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.7)
+- Lesson 18: [Styling the Search Box Using the Forms Plugin](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.8)
