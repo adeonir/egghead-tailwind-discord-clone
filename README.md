@@ -27,3 +27,4 @@ If you're a web developer interested in front-end design and development, you ow
 - Lesson 9: [Building the Active Server Indicator using Group and Transform Utilities](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-0.9)
 - Lesson 10: [Solving the Duplication Problem with Components](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.0)
 - Lesson 11: [Building the Server Header using Arbitrary Values from the JIT Compiler](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.1)
+- Lesson 12: [Styling the Channel List and Controlling Layout](https://github.com/adeonir/egghead-tailwind-discord-clone/tree/lesson-1.2)

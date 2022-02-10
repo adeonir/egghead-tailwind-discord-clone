@@ -1,6 +1,13 @@
 import { useRouter } from 'next/router'
 
-import { CheckIcon, ChevronIcon, VerifiedIcon } from 'components/Icons'
+import {
+  AddPersonIcon,
+  BookIcon,
+  CheckIcon,
+  ChevronIcon,
+  SpeakerphoneIcon,
+  VerifiedIcon,
+} from 'components/Icons'
 
 export default function Server() {
   const router = useRouter()
@@ -16,11 +23,25 @@ export default function Server() {
           {router.query.slug}
           <ChevronIcon className="ml-auto h-[18px] w-[18px] opacity-80" />
         </button>
-        <div className="flex-1 space-y-3 overflow-y-auto p-3 font-medium text-gray-300 scrollbar scrollbar-thin scrollbar-thumb-gray-900">
-          <p className="text-white">General</p>
-          {[...Array(40)].map((_, index) => (
-            <p key={index}>Channel {index + 1}</p>
-          ))}
+        <div className="mt-[17px] flex-1 overflow-y-auto font-medium text-gray-300 scrollbar scrollbar-thin scrollbar-thumb-gray-900">
+          <div className="space-y-0.5">
+            <a
+              href="#"
+              className="group mx-2 flex items-center rounded px-2 py-1 text-gray-300 transition hover:bg-gray-550/[.16] hover:text-gray-100"
+            >
+              <BookIcon className="mr-1.5 h-5 w-5 pt-px text-gray-400" />
+              welcome
+              <AddPersonIcon className="ml-auto h-4 w-4 text-gray-200 opacity-0 transition group-hover:opacity-100 hover:text-gray-100" />
+            </a>
+            <a
+              href="#"
+              className="group mx-2 flex items-center rounded px-2 py-1 text-gray-300 transition hover:bg-gray-550/[.16] hover:text-gray-100"
+            >
+              <SpeakerphoneIcon className="mr-1.5 h-5 w-5 pt-px text-gray-400" />
+              anouncements
+              <AddPersonIcon className="ml-auto h-4 w-4 text-gray-200 opacity-0 transition group-hover:opacity-100 hover:text-gray-100" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="flex flex-1 flex-col bg-gray-700">
