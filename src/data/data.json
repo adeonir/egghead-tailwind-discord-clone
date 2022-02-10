@@ -14,9 +14,9 @@
         "id": 2,
         "label": "Tailwind CSS",
         "channels": [
-          { "id": 3, "label": "general" },
-          { "id": 4, "label": "plugins" },
-          { "id": 5, "label": "help" },
+          { "id": 3, "label": "general", "unread": true },
+          { "id": 4, "label": "plugins", "unread": true },
+          { "id": 5, "label": "help", "unread": true },
           { "id": 6, "label": "internals" }
         ]
       },
@@ -24,8 +24,8 @@
         "id": 3,
         "label": "Tailwind Labs",
         "channels": [
-          { "id": 7, "label": "tailwind-ui" },
-          { "id": 8, "label": "headless-ui" },
+          { "id": 7, "label": "tailwind-ui", "unread": true },
+          { "id": 8, "label": "headless-ui", "unread": true },
           { "id": 9, "label": "refactoring-ui" },
           { "id": 10, "label": "heroicons" }
         ]
@@ -44,8 +44,8 @@
         "label": "Community",
         "channels": [
           { "id": 14, "label": "jobs" },
-          { "id": 15, "label": "showcase" },
-          { "id": 16, "label": "bots" }
+          { "id": 15, "label": "showcase", "unread": true },
+          { "id": 16, "label": "bots", "unread": true }
         ]
       }
     ]
@@ -66,9 +66,9 @@
         "id": 2,
         "label": "Community",
         "channels": [
-          { "id": 4, "label": "introductions" },
+          { "id": 4, "label": "introductions", "unread": true },
           { "id": 5, "label": "general" },
-          { "id": 6, "label": "community-help" },
+          { "id": 6, "label": "community-help", "unread": true },
           { "id": 7, "label": "off-topic" }
         ]
       },
@@ -76,9 +76,9 @@
         "id": 3,
         "label": "Share",
         "channels": [
-          { "id": 8, "label": "showcase" },
-          { "id": 9, "label": "jobs" },
-          { "id": 10, "label": "resources" },
+          { "id": 8, "label": "showcase", "unread": true },
+          { "id": 9, "label": "jobs", "unread": true },
+          { "id": 10, "label": "resources", "unread": true },
           { "id": 11, "label": "kudos" },
           { "id": 12, "label": "discord-suggestions" },
           { "id": 13, "label": "vercel" }
@@ -89,8 +89,8 @@
         "label": "Tools",
         "channels": [
           { "id": 14, "label": "javascript" },
-          { "id": 15, "label": "typescript" },
-          { "id": 16, "label": "tailwind" },
+          { "id": 15, "label": "typescript", "unread": true },
+          { "id": 16, "label": "tailwind", "unread": true },
           { "id": 17, "label": "mdx" }
         ]
       }
@@ -111,8 +111,8 @@
         "id": 2,
         "label": "Text Channels",
         "channels": [
-          { "id": 3, "label": "general" },
-          { "id": 4, "label": "graphql" },
+          { "id": 3, "label": "general", "unread": true },
+          { "id": 4, "label": "graphql", "unread": true },
           { "id": 5, "label": "typescript" }
         ]
       }
