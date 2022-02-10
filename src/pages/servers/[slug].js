@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import startCase from 'lodash.startcase'
 
 import {
   AddPersonIcon,
@@ -20,7 +21,7 @@ export default function Server() {
             <VerifiedIcon className="absolute h-4 w-4 text-gray-550" />
             <CheckIcon className="absolute h-4 w-4 text-white" />
           </div>
-          {router.query.slug}
+          {startCase(router.query.slug)}
           <ChevronIcon className="ml-auto h-[18px] w-[18px] opacity-80" />
         </button>
         <div className="mt-[17px] flex-1 overflow-y-auto font-medium text-gray-300 scrollbar scrollbar-thin scrollbar-thumb-gray-900">
