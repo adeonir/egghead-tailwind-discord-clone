@@ -277,12 +277,13 @@ function getRandomInt(min, max) {
 function getMessages() {
   return [...Array(getRandomInt(7, 25))]
     .map(() => {
-      let user = faker.internet.userName()
-      let avatarUrl = faker.image.avatar()
+      let username = faker.internet.userName()
+      let avatar = faker.image.avatar()
 
       return [...Array(getRandomInt(1, 4))].map(() => ({
-        user,
-        avatarUrl,
+        id: faker.datatype.number(),
+        username,
+        avatar,
         date: '01/15/2021',
         text: faker.lorem.sentences(3),
       }))
