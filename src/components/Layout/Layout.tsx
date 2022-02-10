@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
 
-import { DiscordIcon } from 'components/DiscordIcon'
+import { DiscordIcon } from 'components/Icons'
 import { NavLink } from 'components/NavLink'
 
 type Props = {
